@@ -1,0 +1,25 @@
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite parallel="false" name="noCommerce Regression suite">
+	<parameter name="browser" value="chrome"></parameter>
+
+	<test name="Regression" preserve-order="false">
+		<classes>
+			<class name="testCases.AddReview_TC" />
+			<class name="testCases.AddToCart_TC" />
+			<class name="testCases.AddToCompareProducts_TC" />
+			<class name="testCases.AddToWishList_TC" />
+			<class name="testCases.ChangeCurrency_TC" />
+			<class name="testCases.ChangePassword_TC" />
+			<class name="testCases.CheckOutOrder_TC" />
+			<class name="testCases.contactUs_TC" />
+			<class name="testCases.EmailFriend_TC" />
+			<class name="testCases.GuestUserCheckOutOrders" />
+			<class name="testCases.Login_TC" />
+			<class name="testCases.SearchProducts_TC" />
+			<class name="testCases.SearchProductWithAutoSuggest" />
+			<class name="testCases.SelectSubMenuByHover_TC" />
+			<class name="testCases.UserResgisteration_TC" />
+		</classes>
+	</test>
+</suite> 

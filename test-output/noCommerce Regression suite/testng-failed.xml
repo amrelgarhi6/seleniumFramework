@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [noCommerce Regression suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Regression(failed)">
+    <classes>
+      <class name="testCases.AddToWishList_TC">
+        <methods>
+          <include name="ClosrDriver"/>
+          <include name="UserCanAddProductToWishList"/>
+          <include name="searchWithAutoSuggest"/>
+          <include name="ScreenShotOnFaliure"/>
+          <include name="OpenDriver"/>
+        </methods>
+      </class> <!-- testCases.AddToWishList_TC -->
+      <class name="testCases.CheckOutOrder_TC">
+        <methods>
+          <include name="ClosrDriver"/>
+          <include name="UserResgisterSuccessfully"/>
+          <include name="UserCanCheckCartAndEditQuantity"/>
+          <include name="UserCanSelectItemFromHoverMenuIn_HomePage"/>
+          <include name="ScreenShotOnFaliure"/>
+          <include name="OpenDriver"/>
+          <include name="RegisteredUserCanCheckOutOrders"/>
+        </methods>
+      </class> <!-- testCases.CheckOutOrder_TC -->
+      <class name="testCases.AddReview_TC">
+        <methods>
+          <include name="searchWithAutoSuggest"/>
+          <include name="ClosrDriver"/>
+          <include name="UserRegisterCanAddReview"/>
+          <include name="UserResgisterSuccessfully"/>
+          <include name="ScreenShotOnFaliure"/>
+          <include name="OpenDriver"/>
+        </methods>
+      </class> <!-- testCases.AddReview_TC -->
+      <class name="testCases.UserResgisteration_TC">
+        <methods>
+          <include name="RegistedUserCanLogOut"/>
+          <include name="ClosrDriver"/>
+          <include name="UserResgisterSuccessfully"/>
+          <include name="ScreenShotOnFaliure"/>
+          <include name="OpenDriver"/>
+        </methods>
+      </class> <!-- testCases.UserResgisteration_TC -->
+      <class name="testCases.EmailFriend_TC">
+        <methods>
+          <include name="searchWithAutoSuggest"/>
+          <include name="ClosrDriver"/>
+          <include name="RegisteredUserCanSendProductsToFriends"/>
+          <include name="UserResgisterSuccessfully"/>
+          <include name="RegistedUserCanLogOut"/>
+          <include name="ScreenShotOnFaliure"/>
+          <include name="OpenDriver"/>
+        </methods>
+      </class> <!-- testCases.EmailFriend_TC -->
+      <class name="testCases.ChangePassword_TC">
+        <methods>
+          <include name="RegistedUserCanLogOut"/>
+          <include name="ClosrDriver"/>
+          <include name="UserResgisterSuccessfully"/>
+          <include name="UserCanChangePasswordSuccessfully"/>
+          <include name="UserCanSuccefullyLogin"/>
+          <include name="ScreenShotOnFaliure"/>
+          <include name="OpenDriver"/>
+        </methods>
+      </class> <!-- testCases.ChangePassword_TC -->
+      <class name="testCases.AddToCompareProducts_TC">
+        <methods>
+          <include name="ClosrDriver"/>
+          <include name="searchForProduct_2"/>
+          <include name="searchForProduct_1"/>
+          <include name="UserCanCompareProducts"/>
+          <include name="ScreenShotOnFaliure"/>
+          <include name="OpenDriver"/>
+        </methods>
+      </class> <!-- testCases.AddToCompareProducts_TC -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [noCommerce Regression suite] -->
